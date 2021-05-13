@@ -302,6 +302,7 @@ export default {
           roomName: this.roomName,
         },
       })
+      this.hiddenModal = true;
       return newRoom.data
     },
     async deleteChat() {
@@ -326,7 +327,7 @@ export default {
           name: this.newRoomName,
         },
       })
-      console.log(updatedRoom.data)
+      this.hiddenModal2 = true;
       return updatedRoom.data
     },
     async createMessage() {

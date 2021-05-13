@@ -15,7 +15,7 @@ import {onLogin} from "../vue-apollo";
 const userData = gql`query login($username:String!,$password:String!) {
   login(username: $username, password: $password)
 }`
-export const createMessage = gql`mutation createMessage($message:String!) {
+const createMessage = gql`mutation createMessage($message:String!) {
   createMessage(text: $message) {
     id
     timestamp
